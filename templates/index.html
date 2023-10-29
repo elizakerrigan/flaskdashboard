@@ -7,5 +7,10 @@
 
 <h1>PLACEHOLDER LANDING PAGE</h1>
 
+{% for record in weather_data %}
+    <p>{{ record.city }} - {{ record.date }} - {{ record.time }} - {{ record.temp_min }} - {{ record.temp_max }} - {{ record.weather_description }}</p>
+{% endfor %}
+
+
 </body>
 </html>
