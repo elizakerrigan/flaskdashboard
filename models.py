@@ -2,8 +2,9 @@ from db.db_modules import db
 
 class Weather(db.Model):
     __tablename__ = 'weather'
-    date = db.Column(db.Date, primary_key = True)
-    time = db.Column(db.Time, primary_key = True)
+    date_time = db.Column(db.DateTime, primary_key = True)
+    date = db.Column(db.Date)
+    time = db.Column(db.Time)
     temp_min = db.Column(db.Float)
     temp_max = db.Column(db.Float)
     humidity = db.Column(db.Float)
